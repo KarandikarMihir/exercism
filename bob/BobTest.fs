@@ -5,7 +5,8 @@ module BobTest
 open FsUnit.Xunit
 open Xunit
 
-open Bob
+open Compex
+// open Bob
 
 [<Fact>]
 let ``Stating something`` () =

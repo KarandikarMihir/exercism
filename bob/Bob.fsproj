@@ -3,6 +3,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Compex.fs" />
     <Compile Include="Bob.fs" />
     <Compile Include="BobTest.fs" />
     <Compile Include="Program.fs" />
