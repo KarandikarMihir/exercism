@@ -38,7 +38,7 @@ let blankResponse (str: string) =
     else None
 
 type OrElseBuilder() =
-    member this.ReturnFrom(x) = x
+    member this.Return(x) = x
 
     member this.Combine(a, b) =
         match a with
@@ -53,10 +53,10 @@ let response (str: string) =
     let s' = sanitize str
     let result = 
         orElse {
-            return! blankResponse s'
-            return! questionWhileYelling s'
-            return! questioning s'
-            return! yelling s'
+            return blankResponse s'
+            return questionWhileYelling s'
+            return questioning s'
+            return yelling s'
         }
     let str = match result with
     | Some x -> toString x
